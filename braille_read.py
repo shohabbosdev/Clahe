@@ -24,7 +24,7 @@ def find_braille_matches(input_code):
     return matches_0, matches_1, matches_2
 
 # CNN modelidan chiqqan misol kod (dinamik kiritish uchun)
-input_code = [1, 0, 0, 1, 1, 1]  # Masalan, "f" harfi
+input_code = [1, 0, 0, 0, 1, 1]  # Masalan, "f" harfi
 
 # Hamming masofasiga ko'ra belgilarni topish
 matches_0, matches_1, matches_2 = find_braille_matches(input_code)
