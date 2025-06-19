@@ -5,7 +5,9 @@ import numpy as np
 # Tasvirni yuklash
 st.title("Brayl Tasvirini Orientatsiya Rostlash")
 uploaded_file = st.file_uploader("Tasvirni yuklang (.jpg, .png)", type=["jpg", "png"])
-
+st.latex(r"""
+         I_{silliqlash}(x,y)=\frac{1}{2\pi\sigma^2}e^{-\frac{x^2+y^2}{2\sigma^2}}\cdot I(x,y)
+         """)
 if uploaded_file is not None:
     # Tasvirni o'qish
     img = cv2.imdecode(np.frombuffer(uploaded_file.read(), np.uint8), cv2.IMREAD_GRAYSCALE)
