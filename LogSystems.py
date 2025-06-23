@@ -185,23 +185,6 @@ if x_vars_input:
 if y_vars_input:
     var_names.extend(y_vars_input.split())
 
-st.markdown("<h3 class='sub-header'>Tenglamalarni kiriting</h3>", unsafe_allow_html=True)
-st.markdown("""
-    <div class="note-box">
-    <b>Mantiqiy operatorlar:</b><br>
-    <code>!</code> (INKOR) &rarr; <code>not</code><br>
-    <code>+</code> (DIZYUNKSIYA) &rarr; <code>or</code><br>
-    <code>*</code> (KONYUNKSIYA) &rarr; <code>and</code><br>
-    <code>=</code> (EKVIVALENTLIK) &rarr; <code>==</code><br>
-    <code>-</code> (IMPLIKATSIYA) &rarr; <code><=</code> (masalan, <code>A - B</code> &rarr; <code>A <= B</code>)<br>
-    Har bir tenglamani yangi qatordan kiriting.
-    <br><br>
-    <b>Misol:</b><br>
-    <code>(x1 + y1) = 0</code><br>
-    <code>!(x2 * y2) - x1 = 1</code>
-    </div>
-    """, unsafe_allow_html=True)
-
 equations_input = st.text_area("Mantiqiy tenglamalarni kiriting:", height=200, 
                                value="""(x1 + y1) = 0
 (x2 * y2) = 1""", key="equations_input")
