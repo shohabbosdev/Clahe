@@ -4,7 +4,7 @@ import io
 
 class LogSystems:
     '''
-    Mantiqiy tenglamalar yoki mantiqiy tenglamalar tizimini yechuvchi klass.a
+    Mantiqiy tenglamalar yoki mantiqiy tenglamalar tizimini yechuvchi klass.
     Ajoyib interfeys bilan Streamlit orqali ishlaydi.
     '''
     def __init__(self, x_count, y_count, var_names, equations_str, is_set=True):
